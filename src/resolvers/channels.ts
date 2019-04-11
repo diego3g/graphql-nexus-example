@@ -14,7 +14,7 @@ export const Query = queryType({
   definition(t) {
     t.list.field('testChannels', {
       type: 'Channel',
-      resolve: (parent, args, ctx: Context) => ctx.prisma.channels(),
+      resolve: (parent, args, ctx) => ctx.prisma.channels(),
     });
   },
 });
