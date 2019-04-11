@@ -1,0 +1,8 @@
+{
+  "ext": "ts",
+  "execMap": {
+      "ts": "sucrase-node src/server.ts --transforms typescript,imports"
+  },
+  "watch": ["src"],
+  "ignore": ["src/generated"]
+}

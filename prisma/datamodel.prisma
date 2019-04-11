@@ -1,0 +1,12 @@
+type User {
+  id: ID! @unique
+  email: String! @unique
+  name: String
+}
+
+type Channel {
+  id: ID! @unique
+  title: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
